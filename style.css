@@ -92,7 +92,7 @@ header {
 .hero-text {
     color: #ff914c;
     position: relative;
-    top: 50%;
+    top: 45%;
     opacity: 0;
     animation: 1.5s ease-out 1.5s 1 slideUp forwards;
 }
