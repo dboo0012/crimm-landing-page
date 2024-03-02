@@ -81,9 +81,36 @@ header {
 }
 
 /* Body */
+.hero-img{
+    background:url('assets/crimm-on-wall.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 85vh;
+    position: relative;
+}
+
 .hero-text {
+    color: #ff914c;
+    position: relative;
+    top: 50%;
     opacity: 0;
     animation: 1.5s ease-out 1.5s 1 slideUp forwards;
+}
+
+.hero-btn{
+    background-color: #ff914c;
+    color: #fff;
+    padding: 0.5em 1em;
+    border: none;
+    /* border-radius: 5px; */
+    font-size: 1em;
+    cursor: pointer;
+    transition: black 0.3s ease;
+}
+
+.hero-btn:hover {
+    background-color: blue;
+    color: #fff;
 }
 
 /* Footer */
