@@ -98,7 +98,7 @@ header {
 .hero-img{
     background:url('assets/crimm-on-wall.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: -22px center;
     height: 85vh;
     position: relative;
 }
