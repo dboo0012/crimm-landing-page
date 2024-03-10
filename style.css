@@ -9,6 +9,16 @@
     src: url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 }
 
+@media screen and (min-width: 768px) {
+    .navbar-brand img {
+        width: 100px;
+    }
+    .navbar-brand {
+        margin-right: 10px;
+        padding: 0 1em;
+    }
+}
+
 /* Reset default styles */
 * {
     margin: 0;
@@ -21,12 +31,13 @@ body {
     font-family: "Inter", sans-serif;
     font-size: 16px;
     line-height: 1.5;
-    color: var(--slate-800);
-    /* background-color: var(--slate-800); */
+    color: white;
+    background-color: var(--bg-color);
 }
 
 :root {
     --slate-800: rgb(30 41 59);
+    --bg-color: #3a2618;
 }
 
 /* Add your custom styles below */
@@ -69,7 +80,6 @@ header {
     align-items: center;
 }
 .navbar .navbar-nav .nav-link {
-    color: #000;
     font-size: 1.25em;
     padding: 0.5em 1em;
 }
@@ -91,43 +101,59 @@ header {
 
 .hero-text {
     color: #ff914c;
-    position: relative;
-    top: 45%;
     opacity: 0;
     animation: 1.5s ease-out 1.5s 1 slideUp forwards;
 }
 
 .hero-btn{
     background-color: #ff914c;
-    color: #fff;
-    padding: 0.5em 1em;
+    color: var(--bg-color);
+    padding: 0.75em 1em;
     border: none;
-    /* border-radius: 5px; */
-    font-size: 1em;
+    font-size: 1rem;
     cursor: pointer;
     transition: black 0.3s ease;
 }
 
-.hero-btn:hover {
-    background-color: blue;
+.hero-btn-secondary{
+    background-color: #fff;
+    color: var(--bg-color);
+    padding: 0.75em 1em;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: black 0.3s ease;
+}
+
+.hero-btn:hover,
+.hero-btn-secondary:hover {
+    background-color: var(--bg-color);
     color: #fff;
 }
 
 /* Footer */
 .footer {
-    background-color: #ffffff;
     padding: 2em 0;
     text-align: center;
-    background-color: var(--slate-800);
 }
 
-@media screen and (min-width: 768px) {
-    .navbar-brand img {
-        width: 100px;
-    }
-    .navbar-brand {
-        margin-right: 10px;
-        padding: 0 1em;
-    }
+.footer-list-header {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+    font-family: Anton;
+    color: #ff914c;
 }
+
+.footer-img{
+    margin-bottom: 1em;
+}
+
+footer ul li a {
+    text-decoration: none; 
+}
+
+footer ul li a:hover{
+    color: #ff914c !important;
+}
+
   
