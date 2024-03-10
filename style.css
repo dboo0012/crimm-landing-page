@@ -84,6 +84,10 @@ header {
     padding: 0.5em 1em;
 }
 
+.navbar .navbar-nav .nav-link:hover {
+    color: #ff914c !important;
+}
+
 .navbar-toggler {
     outline: none;
     border: none;
